@@ -116,10 +116,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="usage" class="level3">
 <h3 class="anchored" data-anchor-id="usage">Usage</h3>
 <ol type="1">
-<li>Clone the repository to your local machine</li>
-<li>Open the <code>EDA.ipynb</code> file in Jupyter Notebook or Vscode</li>
-<li>Run the code cells in the notebook to perform RFM analysis on the dataset and segment customers into different groups based on their RFM scores.</li>
-<li>The analysis should provide insights into customer behavior and identification of high-value customers, at-risk customers, and potential opportunities for personalized marketing campaigns.</li>
+<li><p>Clone the repository to your local machine</p>
+<pre><code>git https://github.com/Mfundo-debug/RFM_analysis.git</code></pre></li>
+<li><p>Open the <code>EDA.ipynb</code> file in Jupyter Notebook or Vscode</p></li>
+<li><p>Run the code cells in the notebook to perform RFM analysis on the dataset and segment customers into different groups based on their RFM scores.</p></li>
+<li><p>The analysis should provide insights into customer behavior and identification of high-value customers, at-risk customers, and potential opportunities for personalized marketing campaigns.</p></li>
 </ol>
 </section>
 <section id="three-main-metrics-used-in-rfm-analysis" class="level3">
@@ -187,14 +188,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 <p>The code block below creates a new column called <code>RFM Customer Segments</code> in the <code>data</code> DataFrame and assigns the corresponding segment for each customer based on their RFM score:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#create a new column for RFM customer segments</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'RFM Customer Segments'</span>] <span class="op">=</span> <span class="st">''</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#assign the RFM customer segments</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>data.loc[data[<span class="st">'RFM Score'</span>] <span class="op">&gt;=</span> <span class="dv">9</span>, <span class="st">'RFM Customer Segments'</span>] <span class="op">=</span> <span class="st">'Champions'</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>data.loc[(data[<span class="st">'RFM Score'</span>] <span class="op">&gt;=</span> <span class="dv">6</span>) <span class="op">&amp;</span> (data[<span class="st">'RFM Score'</span>] <span class="op">&lt;</span> <span class="dv">9</span>), <span class="st">'RFM Customer Segments'</span>] <span class="op">=</span> <span class="st">'Potential'</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>data.loc[(data[<span class="st">'RFM Score'</span>] <span class="op">&gt;=</span> <span class="dv">5</span>) <span class="op">&amp;</span> (data[<span class="st">'RFM Score'</span>] <span class="op">&lt;</span> <span class="dv">6</span>), <span class="st">'RFM Customer Segments'</span>] <span class="op">=</span> <span class="st">'At-Risk Customers'</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>data.loc[(data[<span class="st">'RFM Score'</span>] <span class="op">&gt;=</span> <span class="dv">4</span>) <span class="op">&amp;</span> (data[<span class="st">'RFM Score'</span>] <span class="op">&lt;</span><span class="dv">5</span>), <span class="st">'RFM Customer Segments'</span>] <span class="op">=</span> <span class="st">'Can</span><span class="ch">\'</span><span class="st">t Lose Them'</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>data.loc[(data[<span class="st">'RFM Score'</span>]<span class="op">&gt;=</span><span class="dv">3</span>) <span class="op">&amp;</span> (data[<span class="st">'RFM Score'</span>] <span class="op">&lt;</span><span class="dv">4</span>), <span class="st">'RFM Customer Segments'</span>] <span class="op">=</span> <span class="st">'Lost Customers'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#create a new column for RFM customer segments</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'RFM Customer Segments'</span>] <span class="op">=</span> <span class="st">''</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">#assign the RFM customer segments</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>data.loc[data[<span class="st">'RFM Score'</span>] <span class="op">&gt;=</span> <span class="dv">9</span>, <span class="st">'RFM Customer Segments'</span>] <span class="op">=</span> <span class="st">'Champions'</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>data.loc[(data[<span class="st">'RFM Score'</span>] <span class="op">&gt;=</span> <span class="dv">6</span>) <span class="op">&amp;</span> (data[<span class="st">'RFM Score'</span>] <span class="op">&lt;</span> <span class="dv">9</span>), <span class="st">'RFM Customer Segments'</span>] <span class="op">=</span> <span class="st">'Potential'</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>data.loc[(data[<span class="st">'RFM Score'</span>] <span class="op">&gt;=</span> <span class="dv">5</span>) <span class="op">&amp;</span> (data[<span class="st">'RFM Score'</span>] <span class="op">&lt;</span> <span class="dv">6</span>), <span class="st">'RFM Customer Segments'</span>] <span class="op">=</span> <span class="st">'At-Risk Customers'</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>data.loc[(data[<span class="st">'RFM Score'</span>] <span class="op">&gt;=</span> <span class="dv">4</span>) <span class="op">&amp;</span> (data[<span class="st">'RFM Score'</span>] <span class="op">&lt;</span><span class="dv">5</span>), <span class="st">'RFM Customer Segments'</span>] <span class="op">=</span> <span class="st">'Can</span><span class="ch">\'</span><span class="st">t Lose Them'</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>data.loc[(data[<span class="st">'RFM Score'</span>]<span class="op">&gt;=</span><span class="dv">3</span>) <span class="op">&amp;</span> (data[<span class="st">'RFM Score'</span>] <span class="op">&lt;</span><span class="dv">4</span>), <span class="st">'RFM Customer Segments'</span>] <span class="op">=</span> <span class="st">'Lost Customers'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>The code block assigns the ‘Champions’ segment to customers with an RFM score of 9 or higher, the ‘Potential’ segment to customers with an RFM score between 6 and 8, the ‘At-Risk Customers’ segment to customers with an RFM score of 5, the ‘Can’t Lose Them’ segment to customers with an RFM score between 4 and 5, and the ‘Lost Customers’ segment to customers with an RFM score between 3 and 4.</p></li>
 </ul>
 <section id="numbers-of-customers-in-each-segment-results" class="level4">

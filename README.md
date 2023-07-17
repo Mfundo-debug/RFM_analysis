@@ -32,8 +32,15 @@ The given dataset is provided by an e-commerce platform containing customer tran
 ### Usage
 
 1.  Clone the repository to your local machine
+
+    ```         
+    git https://github.com/Mfundo-debug/RFM_analysis.git
+    ```
+
 2.  Open the `EDA.ipynb` file in Jupyter Notebook or Vscode
+
 3.  Run the code cells in the notebook to perform RFM analysis on the dataset and segment customers into different groups based on their RFM scores.
+
 4.  The analysis should provide insights into customer behavior and identification of high-value customers, at-risk customers, and potential opportunities for personalized marketing campaigns.
 
 ### Three Main Metrics used in RFM analysis:
