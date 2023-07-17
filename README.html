@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.361">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>readme</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="README_files/libs/clipboard/clipboard.min.js"></script>
+<script src="README_files/libs/quarto-html/quarto.js"></script>
+<script src="README_files/libs/quarto-html/popper.min.js"></script>
+<script src="README_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="README_files/libs/quarto-html/anchor.min.js"></script>
+<link href="README_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="README_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="README_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="README_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="README_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="e-commerce-rfm-analysis" class="level1">
+<h1>E-Commerce RFM Analysis</h1>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
+<p>RFM analysis is a powerful technique used by companies to better understand customer behaviour and optimize engagement strategies. It revolves around three key dimensions: recency, frequency, and monetary value. These dimensions capture essential aspects of customer transactions, providing valuable information for segmentation and personalized marketing campaigns.</p>
+<p>The given dataset is provided by an e-commerce platform containing customer transaction data including customer ID, purchase date, transaction amount, product information, ID command and location. The platform aims to leverage RFM (recency, frequency, monetary value) analysis to segment customers and optimize customer engagement strategies.</p>
+<ul class="task-list">
+<li><p><input type="checkbox" checked="">RFM analysis is a powerful technique used by companies to better understand customer behaviour and optimize engagement strategies. It revolves around three key dimensions: recency, frequency, and monetary value.</p></li>
+<li><p><input type="checkbox" checked="">These dimensions capture essential aspects of customer transactions, providing valuable information for segmentation and personalized marketing campaigns.</p></li>
+<li><p><input type="checkbox" checked="">The given dataset is provided by an e-commerce platform containing customer transaction data including customer ID, purchase date, transaction amount, product information, ID command and location.</p></li>
+<li><p><input type="checkbox" checked="">The platform aims to leverage RFM (recency, frequency, monetary value) analysis to segment customers and optimize customer engagement strategies.</p></li>
+</ul>
+<section id="task" class="level4">
+<h4 class="anchored" data-anchor-id="task">Task</h4>
+<ul class="task-list">
+<li><input type="checkbox" checked="">Perform RFM analysis on the given dataset and segment customers into different groups based on their RFM scores.</li>
+<li><input type="checkbox" checked="">Provide a detailed analysis of the customer segments and actionable insights for the platform to optimize customer engagement strategies.</li>
+<li><input type="checkbox" checked="">The analysis should provide insights into customer behavior and identification of high-value customers, at-risk customers, and potential opportunities for personalized marketing campaigns.</li>
+</ul>
+</section>
+</section>
+<section id="requirements" class="level3">
+<h3 class="anchored" data-anchor-id="requirements">Requirements</h3>
+<ul class="task-list">
+<li><input type="checkbox" checked="">Python 3.6+</li>
+<li><input type="checkbox" checked="">Jupyter Notebook</li>
+<li><input type="checkbox" checked="">Pandas</li>
+<li><input type="checkbox" checked="">Numpy</li>
+<li><input type="checkbox" checked="">Matplotlib</li>
+<li><input type="checkbox" checked="">Seaborn</li>
+</ul>
+</section>
+<section id="usage" class="level3">
+<h3 class="anchored" data-anchor-id="usage">Usage</h3>
+<ol type="1">
+<li>Clone the repository to your local machine</li>
+<li>Open the <code>EDA.ipynb</code> file in Jupyter Notebook or Vscode</li>
+<li>Run the code cells in the notebook to perform RFM analysis on the dataset and segment customers into different groups based on their RFM scores.</li>
+<li>The analysis should provide insights into customer behavior and identification of high-value customers, at-risk customers, and potential opportunities for personalized marketing campaigns.</li>
+</ol>
+</section>
+<section id="three-main-metrics-used-in-rfm-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="three-main-metrics-used-in-rfm-analysis">Three Main Metrics used in RFM analysis:</h3>
+<ol type="1">
+<li><p>Recency: This metric measures how recently a customer has made a purchase. Customers who have made a purchase more recently are generally considered to be more valuable than those who have not made a purchase in a long time.</p></li>
+<li><p>Frequency: This metric measures how often a customer makes a purchase. Customers who make purchases more frequently are generally considered to be more valuable than those who make purchases less frequently.</p></li>
+<li><p>Monetary: This metric measures how much a customer spends on each purchase. Customers who spend more money per purchase are generally considered to be more valuable than those who spend less money per purchase.</p></li>
+</ol>
+<p>By combining these three metrics, RFM analysis can be used to segment customers into different groups based on their overall value to the business. These segments can then be used to develop targeted marketing strategies and improve customer retention.</p>
+</section>
+<section id="k-means-clustering" class="level3">
+<h3 class="anchored" data-anchor-id="k-means-clustering">K-Means Clustering</h3>
+<ol type="1">
+<li>we used K-means clustering to segment customers based on their RFM scores. RFM stands for Recency, Frequency, and Monetary, and is a commonly used framework for customer segmentation in marketing.</li>
+<li>By clustering customers based on their RFM scores, we can identify groups of customers with similar behavior and develop targeted marketing strategies for each segment.</li>
+<li>K-means clustering is a popular clustering algorithm because it is simple, fast, and effective for many applications. The algorithm works by iteratively assigning data points to the nearest cluster centroid and updating the centroids based on the mean of the assigned data points. The number of clusters is specified by the user, and the algorithm tries to minimize the within-cluster sum of squares (WCSS) to create compact and well-separated clusters.</li>
+</ol>
+<section id="how-does-k-means-works" class="level5">
+<h5 class="anchored" data-anchor-id="how-does-k-means-works">How Does K-means works:</h5>
+<p>Here’s the mathematical formula for K-means clustering</p>
+<p>Given a dataset <span class="math inline">\(X = {x1, x2, …, x_n}\)</span> and a number of clusters k, the K-means algorithm aims to partition the data into <span class="math inline">\(k\)</span> clusters <span class="math inline">\(C = {C1, C2, …, C_k}\)</span> such that the within-cluster sum of squares (WCSS) is minimized:</p>
+<p><span class="math display">\[
+[\underset{C}{\operatorname{argmin}} \sum_{i=1}^{k} \sum_{x \in C_i} ||x - \mu_i||^2]
+\]</span></p>
+<p>where <span class="math inline">\(\mu_i\)</span> is the mean of the data points in cluster <span class="math inline">\(C_i\)</span></p>
+<p>The algorithm works by iteratively assigning data points to the nearest cluster centroid and updating the centroids based on the mean of the assigned data points. The number of clusters k is specified by the user, and the algorithm tries to minimize the WCSS to create compact and well-separated clusters.</p>
+</section>
+</section>
+<section id="results" class="level3">
+<h3 class="anchored" data-anchor-id="results">Results</h3>
+<p>The analysis provides insights into customer behavior and identification of high-value customers, at-risk customers, and potential opportunities for personalized marketing campaigns. The following tasks were performed:</p>
+<ul>
+<li><p>RFM analysis was performed on the given dataset to segment customers into different groups based on their RFM scores.</p></li>
+<li><p>A detailed analysis of the customer segments was provided, including the distribution of RFM scores, the characteristics of each segment, and actionable insights for the platform to optimize customer engagement strategies.</p>
+<p>The following table shows the RFM customer segments and their corresponding RFM score ranges:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>RFM Customer Segment</th>
+<th>RFM Score Range</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Champions</td>
+<td>9-15</td>
+</tr>
+<tr class="even">
+<td>Potential</td>
+<td>6-8</td>
+</tr>
+<tr class="odd">
+<td>At-Risk Customers</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Can’t Lose Them</td>
+<td>4-5</td>
+</tr>
+<tr class="odd">
+<td>Lost Customers</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>The code block below creates a new column called <code>RFM Customer Segments</code> in the <code>data</code> DataFrame and assigns the corresponding segment for each customer based on their RFM score:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#create a new column for RFM customer segments</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'RFM Customer Segments'</span>] <span class="op">=</span> <span class="st">''</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#assign the RFM customer segments</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>data.loc[data[<span class="st">'RFM Score'</span>] <span class="op">&gt;=</span> <span class="dv">9</span>, <span class="st">'RFM Customer Segments'</span>] <span class="op">=</span> <span class="st">'Champions'</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>data.loc[(data[<span class="st">'RFM Score'</span>] <span class="op">&gt;=</span> <span class="dv">6</span>) <span class="op">&amp;</span> (data[<span class="st">'RFM Score'</span>] <span class="op">&lt;</span> <span class="dv">9</span>), <span class="st">'RFM Customer Segments'</span>] <span class="op">=</span> <span class="st">'Potential'</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>data.loc[(data[<span class="st">'RFM Score'</span>] <span class="op">&gt;=</span> <span class="dv">5</span>) <span class="op">&amp;</span> (data[<span class="st">'RFM Score'</span>] <span class="op">&lt;</span> <span class="dv">6</span>), <span class="st">'RFM Customer Segments'</span>] <span class="op">=</span> <span class="st">'At-Risk Customers'</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>data.loc[(data[<span class="st">'RFM Score'</span>] <span class="op">&gt;=</span> <span class="dv">4</span>) <span class="op">&amp;</span> (data[<span class="st">'RFM Score'</span>] <span class="op">&lt;</span><span class="dv">5</span>), <span class="st">'RFM Customer Segments'</span>] <span class="op">=</span> <span class="st">'Can</span><span class="ch">\'</span><span class="st">t Lose Them'</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>data.loc[(data[<span class="st">'RFM Score'</span>]<span class="op">&gt;=</span><span class="dv">3</span>) <span class="op">&amp;</span> (data[<span class="st">'RFM Score'</span>] <span class="op">&lt;</span><span class="dv">4</span>), <span class="st">'RFM Customer Segments'</span>] <span class="op">=</span> <span class="st">'Lost Customers'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The code block assigns the ‘Champions’ segment to customers with an RFM score of 9 or higher, the ‘Potential’ segment to customers with an RFM score between 6 and 8, the ‘At-Risk Customers’ segment to customers with an RFM score of 5, the ‘Can’t Lose Them’ segment to customers with an RFM score between 4 and 5, and the ‘Lost Customers’ segment to customers with an RFM score between 3 and 4.</p></li>
+</ul>
+<section id="numbers-of-customers-in-each-segment-results" class="level4">
+<h4 class="anchored" data-anchor-id="numbers-of-customers-in-each-segment-results">Numbers of Customers in Each Segment Results</h4>
+<p><img src="numbers.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="conclusion" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
+<p>The RFM analysis provides valuable insights into customer behavior and segmentation, enabling the platform to optimize customer engagement strategies and improve customer satisfaction. The platform can use the insights gained from the analysis to identify high-value customers, at-risk customers, and potential opportunities for personalized marketing campaigns.</p>
+<p>In summary, clustering is a powerful technique for grouping similar data points together, and K-means clustering is a popular algorithm for many applications, including customer segmentation. By using clustering to identify groups of customers with similar behavior, we can develop targeted marketing strategies to improve customer retention and increase sales.</p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

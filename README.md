@@ -46,6 +46,26 @@ The given dataset is provided by an e-commerce platform containing customer tran
 
 By combining these three metrics, RFM analysis can be used to segment customers into different groups based on their overall value to the business. These segments can then be used to develop targeted marketing strategies and improve customer retention.
 
+### K-Means Clustering
+
+1.  we used K-means clustering to segment customers based on their RFM scores. RFM stands for Recency, Frequency, and Monetary, and is a commonly used framework for customer segmentation in marketing.
+2.  By clustering customers based on their RFM scores, we can identify groups of customers with similar behavior and develop targeted marketing strategies for each segment.
+3.  K-means clustering is a popular clustering algorithm because it is simple, fast, and effective for many applications. The algorithm works by iteratively assigning data points to the nearest cluster centroid and updating the centroids based on the mean of the assigned data points. The number of clusters is specified by the user, and the algorithm tries to minimize the within-cluster sum of squares (WCSS) to create compact and well-separated clusters.
+
+##### How Does K-means works:
+
+Here's the mathematical formula for K-means clustering
+
+Given a dataset $X = {x1, x2, …, x_n}$ and a number of clusters k, the K-means algorithm aims to partition the data into $k$ clusters $C = {C1, C2, …, C_k}$ such that the within-cluster sum of squares (WCSS) is minimized:
+
+$$
+[\underset{C}{\operatorname{argmin}} \sum_{i=1}^{k} \sum_{x \in C_i} ||x - \mu_i||^2]
+$$
+
+where $\mu_i$ is the mean of the data points in cluster $C_i$
+
+The algorithm works by iteratively assigning data points to the nearest cluster centroid and updating the centroids based on the mean of the assigned data points. The number of clusters k is specified by the user, and the algorithm tries to minimize the WCSS to create compact and well-separated clusters.
+
 ### Results
 
 The analysis provides insights into customer behavior and identification of high-value customers, at-risk customers, and potential opportunities for personalized marketing campaigns. The following tasks were performed:
@@ -79,6 +99,12 @@ The analysis provides insights into customer behavior and identification of high
 
     The code block assigns the 'Champions' segment to customers with an RFM score of 9 or higher, the 'Potential' segment to customers with an RFM score between 6 and 8, the 'At-Risk Customers' segment to customers with an RFM score of 5, the 'Can't Lose Them' segment to customers with an RFM score between 4 and 5, and the 'Lost Customers' segment to customers with an RFM score between 3 and 4.
 
+#### Numbers of Customers in Each Segment Results
+
+![](numbers.png)
+
 ### Conclusion
 
-The RFM analysis provides valuable insights into customer behavior and segmentation, enabling the platform to optimize customer engagement strategies and improve customer satisfaction. The platform can use the insights gained from the analysis to identify high-value customers, at-risk customers, and potential opportunities for personalized marketing campaigns
+The RFM analysis provides valuable insights into customer behavior and segmentation, enabling the platform to optimize customer engagement strategies and improve customer satisfaction. The platform can use the insights gained from the analysis to identify high-value customers, at-risk customers, and potential opportunities for personalized marketing campaigns.
+
+In summary, clustering is a powerful technique for grouping similar data points together, and K-means clustering is a popular algorithm for many applications, including customer segmentation. By using clustering to identify groups of customers with similar behavior, we can develop targeted marketing strategies to improve customer retention and increase sales.
